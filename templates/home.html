@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>office Employ management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+       .btn{
+          background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+    </style>
+<body>
+    <div class="container">
+        <h1>Office Employ Management</h1>
+        <hr>
+        <a class="btn" href="{% url 'all_employ' %}" role="button">View All Employee</a>
+        <a class="btn" href="{% url 'add_employ' %}" role="button">Add All Employee</a>
+        <a class="btn" href="{% url 'remove_employ' %}" role="button">Remove All Employee</a>
+        <a class="btn" href="{% url 'filter_employ' %}" role="button">Filter All Employee</a>
+    </div>
+</body>
+</html>
